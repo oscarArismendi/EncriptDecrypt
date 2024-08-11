@@ -229,3 +229,27 @@ footer{
         min-width: 45vw;
     }
 }
+
+@media (max-width:650px){
+    #logo{
+        top:24px;
+        left: 16px;
+    }
+
+    #left-container {
+        margin-top: 80px;
+    }
+
+    #input-text {
+        height: 35vh;
+    }
+
+    #left-container-buttons{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .btn{
+        height: 67px;
+    }
+}
