@@ -8,7 +8,7 @@
     --warning-text-color:#91969d;
     --darker-primary-color:#d8dfe8;
     --no-found-title-color:#3c4248;
-    --output-text-color:#ced4dd;
+    --output-text-color:#5f666c;
     --encrypt-hover:#092d5b;
     --decrypt-hover:#c4cbd3;
 
@@ -194,4 +194,38 @@ footer{
     font-size: 1rem;
     font-weight: 600;
     color: var(--tertiary-color);
+}
+
+@media (max-width:1200px){
+    #logo{
+        top:73px;
+    }
+
+    #container{
+        flex-direction: column;
+        margin-top: 13vw;
+        margin-left: 0;
+    }
+
+    #left-container{
+        margin-top: 116px;
+    }
+
+    #input-text{
+        height: 50vh;
+    }
+
+    #right-container-image {
+        display: none;
+    }
+
+    #right-container-text{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn{
+        min-width: 45vw;
+    }
 }
