@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="js/app.js" defer></script>
     <title>Encrypter And Decrypter</title>
 </head>
 
@@ -20,18 +21,17 @@
                 <p id="warning-text">Only lowercase letters and no accents</p>
             </div>
             <div id="left-container-buttons">
-                <button id="encrypt-button" class="btn">Encrypt</button>
-                <button id="decrypt-button" class="btn">Decrypt</button>
+                <button id="encrypt-button" class="btn" onclick="Encrypt()">Encrypt</button>
+                <button id="decrypt-button" class="btn" onclick="Decrypt()">Decrypt</button>
             </div>
         </section>
         <section id="right-container">
             <img src="./assets/Muñeco.png" alt="person with a magnifying glass" id="right-container-image">
             <div id="right-container-text">
                 <h2 id="status-title">No message was found</h2>
-                <!-- <textarea name="status-text" id="status-text" placeholder="Enter the text you want to encrypt or decrypt."></textarea> -->
-                <p id="status-text">Enter the text you want to encrypt or decrypt.</p>
+                <textarea name="status-text" id="status-text" placeholder="Enter the text you want to encrypt or decrypt." readonly></textarea>
             </div>
-            <button id="copy-button" class="btn">Copy</button>
+            <button id="copy-button" class="btn hide" onclick="copy()">Copy</button>
         </section>
     </main>
     <footer>
